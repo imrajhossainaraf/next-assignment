@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/navigation";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
       
       <div className="flex items-center gap-6">
         {navLinks.map((link) => (
-          <a
+          <Link
             key={link.name}
             href={link.href}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
@@ -31,7 +31,7 @@ export default function Navbar() {
             }`}
           >
             <span>{link.name}</span>
-          </a>
+          </Link>
         ))}
       </div>
     </nav>

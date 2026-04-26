@@ -4,12 +4,24 @@ import { useParams, useRouter } from "next/navigation";
 import data from "../../../lib/data.json";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { useTimeline } from "../../../context/TimelineContext";
 
 export default function FriendDetailPage() {
   const params = useParams();
   const router = useRouter();
+  const { addInteraction } = useTimeline();
   const friendId = parseInt(params.id);
   const friend = data.find(f => f.id === friendId);
+
+  const handleCheckIn = (type, icon) => {
+    addInteraction({
+      type,
+      friend: friend.name,
+      date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+      icon
+    });
+    router.push('/timeline');
+  };
 
   if (!friend) {
     return (
@@ -86,15 +98,15 @@ export default function FriendDetailPage() {
             <div className="space-y-4">
                <h3 className="text-sm font-black text-zinc-400 uppercase tracking-widest">Quick Check-In</h3>
                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                 <button className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
+                 <button onClick={() => handleCheckIn('Call', '/assets/call.png')} className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
                    <img src="/assets/call.png" className="h-6" />
                    <span className="font-bold text-zinc-900">Call</span>
                  </button>
-                 <button className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
+                 <button onClick={() => handleCheckIn('Text', '/assets/text.png')} className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
                    <img src="/assets/text.png" className="h-6" />
                    <span className="font-bold text-zinc-900">Text</span>
                  </button>
-                 <button className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
+                 <button onClick={() => handleCheckIn('Video', '/assets/video.png')} className="btn h-24 bg-white border border-zinc-100 rounded-3xl flex flex-col gap-2 hover:bg-zinc-50">
                    <img src="/assets/video.png" className="h-6" />
                    <span className="font-bold text-zinc-900">Video</span>
                  </button>
