@@ -1,0 +1,122 @@
+[
+  {
+    "id": 2,
+    "name": "Sarah Kim",
+    "picture": "https://example.com/sarah.jpg",
+    "email": "sarah.kim@example.com",
+    "days_since_contact": 3,
+    "status": "active",
+    "tags": ["work", "mentor"],
+    "bio": "My manager at first job. Taught me a lot about product design.",
+    "goal": 7,
+    "next_due_date": "2025-07-14"
+  },
+  {
+    "id": 3,
+    "name": "Marcus Johnson",
+    "picture": "https://example.com/marcus.jpg",
+    "email": "marcus.j@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["family", "childhood"],
+    "bio": "Cousin who moved to Canada. We grew up together.",
+    "goal": 21,
+    "next_due_date": "2025-06-30"
+  },
+  {
+    "id": 4,
+    "name": "Priya Patel",
+    "picture": "https://example.com/priya.jpg",
+    "email": "priya.patel@example.com",
+    "days_since_contact": 1,
+    "status": "active",
+    "tags": ["college", "roommate"],
+    "bio": "My college roommate for 3 years. Now lives in NYC.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 5,
+    "name": "Tom Bennett",
+    "picture": "https://example.com/tom.jpg",
+    "email": "tom.bennett@example.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["networking", "industry"],
+    "bio": "Met at a tech conference in 2022. Works in AI startups.",
+    "goal": 30,
+    "next_due_date": "2025-06-15"
+  },
+  {
+    "id": 6,
+    "name": "Aisha Okafor",
+    "picture": "https://example.com/aisha.jpg",
+    "email": "aisha.o@example.com",
+    "days_since_contact": 7,
+    "status": "active",
+    "tags": ["close friend", "neighbor"],
+    "bio": "Next door neighbor for 5 years. We cook dinner together sometimes.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 7,
+    "name": "Daniel Cruz",
+    "picture": "https://example.com/daniel.jpg",
+    "email": "daniel.cruz@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["work", "ex-colleague"],
+    "bio": "Former teammate at Acme Corp. Great engineer and funny guy.",
+    "goal": 30,
+    "next_due_date": "2025-06-10"
+  },
+  {
+    "id": 8,
+    "name": "Yuki Tanaka",
+    "picture": "https://example.com/yuki.jpg",
+    "email": "yuki.tanaka@example.com",
+    "days_since_contact": 5,
+    "status": "active",
+    "tags": ["hobby", "book club"],
+    "bio": "Met through a local book club. We share a love for sci-fi novels.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 9,
+    "name": "Lena Müller",
+    "picture": "https://example.com/lena.jpg",
+    "email": "lena.muller@example.com",
+    "days_since_contact": 90,
+    "status": "overdue",
+    "tags": ["travel", "acquaintance"],
+    "bio": "Met backpacking in Thailand in 2019. Still keep in touch occasionally.",
+    "goal": 60,
+    "next_due_date": "2025-05-20"
+  },
+  {
+    "id": 10,
+    "name": "James Osei",
+    "picture": "https://example.com/james.jpg",
+    "email": "james.osei@example.com",
+    "days_since_contact": 0,
+    "status": "active",
+    "tags": ["family", "brother"],
+    "bio": "My older brother. We talk almost every day.",
+    "goal": 3,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 11,
+    "name": "Nina Rossi",
+    "picture": "https://example.com/nina.jpg",
+    "email": "nina.rossi@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "study group"],
+    "bio": "Study partner from grad school. Now a professor in Milan.",
+    "goal": 14,
+    "next_due_date": "2025-07-05"
+  }
+]
